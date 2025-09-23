@@ -23,12 +23,12 @@
 		<title>Innovatech‑Zone | Store under construction</title>
 		<meta name="description" content="We're building Innovatech‑Zone. Meanwhile, explore our other stores for home, décor, fashion, beauty and toys."/>
 		<style>
-			:root{ --bg:#0B1020; --fg:#E5F4FF; --accent:#00E5FF; --muted:#9fb3c8; --grid:#132040; --glow:rgba(0,229,255,.12);
-			--display:"Orbitron", ui-sans-serif, system-ui, Segoe UI, Roboto, Arial; --text: ui-sans-serif, system-ui, Segoe UI, Roboto, Arial; }
-			*{box-sizing:border-box}
+			:root{  --bg:#0B1020; --fg:#E5F4FF; --accent:#00E5FF; --muted:#9fb3c8; --grid:#132040; --glow:rgba(0,229,255,.12);
+			--display:"Orbitron", ui-sans-serif, system-ui, Segoe UI, Roboto, Arial; --text: ui-sans-serif, system-ui, Segoe UI, Roboto, Arial;  }
+			*{ box-sizing:border-box }
 
-			 html,body{min-height:100%}
-			 body{
+			 html,body{ min-height:100% }
+			 body{ 
 			  margin:0;
 			  font-family:var(--text);
 			  color:var(--fg);
@@ -41,31 +41,31 @@
 			  background-size: 40px 40px, 40px 40px, auto;
 			  background-repeat: repeat, repeat, no-repeat;
 			  background-attachment: scroll, scroll, scroll; 
-			}
+			 }
 
-			header{max-width:1140px; margin:auto; padding:18px 16px; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:8px; text-align:center}
-			.logo{font-family:var(--display); font-weight:800; letter-spacing:1.5px; font-size:2rem}
-			.hero{max-width:800px; margin:60px auto; padding:0 16px; text-align:center}
-			.hero h1{font-family:var(--display); font-size:clamp(28px,6vw,52px); margin:.5rem 0}
-			.hero p{max-width:60ch; margin:auto; font-size:1.1rem}
-			.stores{max-width:1100px; margin:60px auto; padding:0 16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px}
-			.store-card{background: rgba(255, 255, 255, 0.08);  border:1px solid #1f2b4d; border-radius:16px; padding:20px; backdrop-filter: blur(6px); text-align:center}
-			.store-card div{width: 100%;}
-			.store-card h3{margin:12px 0 8px; font-family:var(--display)}
-			.store-card p{font-size:0.95rem; color:var(--muted)}
-			footer{max-width:1140px; margin:44px auto 24px; padding:0 16px; text-align:center; color:#9fb3c8; font-size:14px}
-			@media(max-width:600px){.logo{font-size:1.5rem}.hero h1{font-size:1.8rem}}
+			header{ max-width:1140px; margin:auto; padding:18px 16px; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:8px; text-align:center }
+			.logo{ font-family:var(--display); font-weight:800; letter-spacing:1.5px; font-size:2rem }
+			.hero{ max-width:800px; margin:60px auto; padding:0 16px; text-align:center }
+			.hero h1{ font-family:var(--display); font-size:clamp(28px,6vw,52px); margin:.5rem 0 }
+			.hero p{ max-width:60ch; margin:auto; font-size:1.1rem }
+			.stores{ max-width:1100px; margin:60px auto; padding:0 16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px }
+			.store-card{ background: rgba(255, 255, 255, 0.08);  border:1px solid #1f2b4d; border-radius:16px; padding:20px; backdrop-filter: blur(6px); text-align:center }
+			.store-card div{ width: 100%; }
+			.store-card h3{ margin:12px 0 8px; font-family:var(--display) }
+			.store-card p{ font-size:0.95rem; color:var(--muted) }
+			footer{ max-width:1140px; margin:44px auto 24px; padding:0 16px; text-align:center; color:#9fb3c8; font-size:14px }
+			@media(max-width:600px){ .logo{ font-size:1.5rem }.hero h1{ font-size:1.8rem } }
 			/* Stores grid */
-			.stores{max-width:1140px; margin:8px auto 48px; padding:0 16px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px}
-			.store-card{background: rgba(255, 255, 255, 0.08);  border:1px solid #1f2b4d; border-radius:16px; padding:14px; text-decoration:none; color:var(--fg); display:inline-grid; gap:10px; align-items:center}
-			.store-card:hover{border-color:var(--accent)}
-			.store-card svg{flex:0 0 24px}
-			.store-card h3{margin:0; font-size:24px}
-			.store-card p{margin:2px 0 0; font-size:18px; color:var(--muted)}
-			@media(max-width:1024px){.stores{grid-template-columns:repeat(3,minmax(0,1fr))}}
-			@media(max-width:640px){.stores{grid-template-columns:1fr}}
-			#stores{ text-align: center; }
-			.sr-only{ position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+			.stores{ max-width:1140px; margin:8px auto 48px; padding:0 16px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px }
+			.store-card{ background: rgba(255, 255, 255, 0.08);  border:1px solid #1f2b4d; border-radius:16px; padding:14px; text-decoration:none; color:var(--fg); display:inline-grid; gap:10px; align-items:center }
+			.store-card:hover{ border-color:var(--accent) }
+			.store-card svg{ flex:0 0 24px }
+			.store-card h3{ margin:0; font-size:24px }
+			.store-card p{ margin:2px 0 0; font-size:18px; color:var(--muted) }
+			@media(max-width:1024px){ .stores{ grid-template-columns:repeat(3,minmax(0,1fr)) } }
+			@media(max-width:640px){ .stores{ grid-template-columns:1fr } }
+			#stores{  text-align: center;  }
+			.sr-only{  position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;  }
 		</style>
 	</head>
 	<body>
