@@ -1,6 +1,30 @@
-{ extends file='layouts/layout-error.tpl' }
+{**
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to https://devdocs.prestashop.com/ for more information.
+ *
+ * @author    PrestaShop SA and Contributors <contact@prestashop.com>
+ * @copyright Since 2007 PrestaShop SA and Contributors
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
+ *}
+{extends file='layouts/layout-error.tpl'}
 
-{ block name='content' }
+{block name='content'}
 
 <style>
 :root{  --bg:#0B1020; --fg:#E5F4FF; --accent:#00E5FF; --muted:#9fb3c8; --grid:#132040; --glow:rgba(0,229,255,.12);
@@ -52,34 +76,34 @@ footer{ max-width:1140px; margin:44px auto 24px; padding:0 16px; text-align:cent
 
   <section id="main">
 
-    { block name='page_header_container' }
+    {block name='page_header_container'}
       <header class="page-header">
-        { block name='page_header_logo' }
-        <div class="logo"><img src="{ $shop.logo }" alt="logo" loading="lazy"></div>
-        { /block }
+        {block name='page_header_logo'}
+        <div class="logo"><img src="{$shop.logo}" alt="logo" loading="lazy"></div>
+        {/block}
 
-        { block name='hook_maintenance' }
-          { $HOOK_MAINTENANCE nofilter }
-        { /block }
+        {block name='hook_maintenance'}
+          {$HOOK_MAINTENANCE nofilter}
+        {/block}
 
-        { block name='page_header' }
-          <h1>{ block name='page_title' }{ l s='We\'ll be back soon.' d='Shop.Theme.Global' }{ /block }</h1>
-        { /block }
+        {block name='page_header'}
+          <h1>{block name='page_title'}{l s='We\'ll be back soon.' d='Shop.Theme.Global'}{/block}</h1>
+        {/block}
       </header>
-    { /block }
+    {/block}
 
-    { block name='page_content_container' }
+    {block name='page_content_container'}
       <section id="content" class="page-content page-maintenance">
-        { block name='page_content' }
-          { $maintenance_text nofilter }
-        { /block }
+        {block name='page_content'}
+          {$maintenance_text nofilter}
+        {/block}
       </section>
-    { /block }
+    {/block}
 
-    { block name='page_footer_container' }
+    {block name='page_footer_container'}
 
-    { /block }
+    {/block}
 
   </section>
 
-{ /block }
+{/block}
