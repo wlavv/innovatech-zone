@@ -12,6 +12,20 @@ RewriteCond %{HTTP_HOST} !^www\.innovatech-zone\.com$ [NC]
 RewriteRule ^ https://www.innovatech-zone.com%{REQUEST_URI} [R=301,L]
 
 # ----------------------------------------------------------------------
+# Landing page durante manutenção (200 OK)
+# ----------------------------------------------------------------------
+# Permitir acesso ao back-office (troca adminXYZ pela tua pasta real)
+RewriteRule ^adminXYZ/ - [L]
+
+# Permitir assets da landing
+RewriteCond %{REQUEST_URI} ^/(maintenance\.html|assets/|css/|js/|img/|fonts/) [NC]
+RewriteRule ^ - [L]
+
+# Tudo o resto mostra a landing (200 OK)
+# (alvo relativo, sem barra inicial)
+RewriteRule ^.*$ maintenance.html [L]
+
+# ----------------------------------------------------------------------
 # Segurança básica
 # ----------------------------------------------------------------------
 <IfModule mod_headers.c>
